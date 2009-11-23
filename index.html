@@ -1,24 +1,61 @@
-<!-- Copyright 2004 gesf.org -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
-<head>
-<title>gesf.github.com</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="author" content="Gon&ccedil;alo &quot;gesf&quot; Fontoura" />
-<meta name="description" content="Portugal based web developer" />
-<meta name="robots" content="index,follow" />
-<link rel="stylesheet" href="http://c.gesf.org/default.css" type="text/css" media="screen" title="presentation styles" />
-<link rel="shortcut icon" href="http://gesf.org/gesfo.ico" type="image/x-icon" />
-</head>
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8"  />
+		<title>gesf.github.com</title>
+		<link rel="shortcut icon" href="gesf.ico" type="image/x-icon" />
+		<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: Lucida Grande;
+			font-size: 11px;
+			color: #fff;
+			background-color: #e3e3e3;
+			background-image: url(background.jpg);
+			background-position: 0 0;
+			background-repeat: repeat-x;
+		}
+		
+		#container {
+			margin: 240px auto 0 auto;
+			text-align: center;
+		}	
+		
+		#container label {
+			display: block;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+		}
+
+		#container select {
+			border: 0;
+			padding: 2px;
+			margin-top: 10px;
+			background-color: #e3e3e3;
+		}
+		</style>
+		<script type="text/javascript">
+		function go(where) {
+			window.location.href = "http://github.com/gesf/" + where;
+		}
+		</script>
+	</head>
 <body>
-<div id="options" style="margin-top:250px!important;">
-Choose repository: <select onchange="location.replace('http://github.com/gesf/' + this.options[selectedIndex].value);">
-<option selected="selected">select code</option>
-<option value="droopple.applescript">A simple apple script to help you setup and run droopy</option>
-<option value="urlms.applescript">AppleScript to short URLs</option>
-<option value="captcha.class.php">A simple PHP4-like CAPTCHA Class</option>
-<option value="pi.urlms.ee-addon">URL Shortening Plugin for ExpressionEngine</option>
-</select>
+<div id="container">
+	<label for="options">Choose repository</label>
+	<select name="options" onchange="go(this.options[selectedIndex].value);">
+		<option selected="selected">---</option>
+		<option value="droopple.applescript">A simple apple script to help you setup and run droopy</option>
+		<option value="urlms.applescript">AppleScript to short URLs</option>
+		<option value="captcha.class.php">A simple PHP4-like CAPTCHA Class</option>
+		<option value="pi.urlms.ee-addon">URL Shortening Plugin for ExpressionEngine</option>
+	</select>
 </div>
 </body>
 </html>
