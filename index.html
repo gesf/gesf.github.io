@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html;charset=UTF-8"  />
-		<title>gesf.github.com</title>
-		<link rel="shortcut icon" href="gesf.ico" type="image/x-icon" />
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>gesf.github.io</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta name="author" content="Goncalo Fontoura" />
 		<style type="text/css">
 		* {
 			margin: 0;
@@ -12,13 +12,10 @@
 		}
 		
 		body {
+			background-color: #333;
 			font-family: Lucida Grande;
 			font-size: 11px;
-			color: #fff;
-			background-color: #e3e3e3;
-			background-image: url(background.jpg);
-			background-position: 0 0;
-			background-repeat: repeat-x;
+			color: #ddd;
 		}
 		
 		#container {
@@ -46,23 +43,19 @@
 		</style>
 		<script type="text/javascript">
 		function go(where) {
-			window.location.href = "http://github.com/gesf/" + where;
+			window.location.href = where;
 		}
 		</script>
 	</head>
 <body>
 <div id="container">
-	<label for="options">Choose repository</label>
+	<label for="options">Choose Project</label>
 	<select name="options" onchange="go(this.options[selectedIndex].value);">
-		<option selected="selected">---</option>
-		<option value="droopple.applescript">A simple apple script to help you setup and run droopy</option>
-		<option value="urlms.applescript">AppleScript to short URLs</option>
-		<option value="captcha.class.php">A simple PHP4-like CAPTCHA Class</option>
-		<option value="pi.urlms.ee-addon">URL Shortening Plugin for ExpressionEngine</option>
+		<option selected="selected">Please select</option>
+		<option value="https://simple-api.app">simple-api.app</option>
+		<option value="https://lawst.app">lawst.app</option>
+		<option value="-" disabled="disabled">causes</option>
 	</select>
-	<div class="advertisement">
-		<a href="http://lsiurl.com/sub/mrmoney/"><img src="http://lowstressincome.com/images/banners/sub7.gif" /></a></div>
-	</div>	
 </div>
 </body>
 </html>
